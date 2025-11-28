@@ -1,24 +1,24 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+import { Stack, Tabs } from "expo-router";
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Tabs>
+      <Tabs.Screen name="index" options={{
+        title: 'Home',
+        tabBarLabel: 'Home'
+      }}/>
+      <Tabs.Screen name="(tabs)/academica" options={{
+        title: 'Perfil Acadêmico',
+        tabBarLabel: 'Perfil Acadêmico'
+      }}/>
+      <Tabs.Screen name="(tabs)/profissional" options={{
+        title: 'Perfil Profissional',
+        tabBarLabel: 'Perfil Profissional'
+      }}/>
+      <Tabs.Screen name="(tabs)/jogo" options={{
+        title: 'Jogo',
+        tabBarLabel: 'Jogo da forca'
+      }}/>
+    </Tabs>
   );
 }
