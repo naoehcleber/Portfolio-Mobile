@@ -11,7 +11,7 @@ export default function Sobre(){
                 <Text style={styles.h2}> React-Native </Text>
                 <Image source={require('../../assets/images/icon.png')}/>
                 <Text style={styles.h2}> Expo Go </Text>
-                <Image source={require('../../assets/images/react-logo')}/>
+                <Image source={require('../../assets/images/react-logo.png')}/>
             </View>
         </ScrollView>
     );
