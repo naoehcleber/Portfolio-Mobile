@@ -87,7 +87,7 @@ export default function Academica(){
   ];
 
     return(
-        <View style={styles.sectionContainer}>
+        <ScrollView style={styles.sectionContainer}>
       
           {/* Equivalente ao <h2>, estilizado como um título de seção (h2) */}
           <Text style={styles.h2}>Formações Acadêmicas</Text>
@@ -133,7 +133,7 @@ export default function Academica(){
       </ScrollView>
     </View>
           </View>
-        </View>
+  </ScrollView>
 
         
     )

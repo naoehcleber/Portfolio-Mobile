@@ -122,7 +122,7 @@ export default function Jogo (){
     };
 
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <Text style={styles.header}>Jogo da Forca</Text>
             
             {/* Display da Forca (Arte ASCII) */}
@@ -177,7 +177,7 @@ export default function Jogo (){
                     {gameOver ? "Jogar Novamente" : "Reiniciar Jogo"}
                 </Text>
             </TouchableOpacity>
-        </View>
+        </ScrollView>
     );
 };
 
