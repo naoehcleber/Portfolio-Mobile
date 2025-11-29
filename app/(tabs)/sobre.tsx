@@ -9,9 +9,9 @@ export default function Sobre(){
             <Text style={styles.sectionTitle}>Tecnologias Usadas</Text>
             <View>
                 <Text style={styles.h2}> React-Native </Text>
-                <Image source={require('../assets/images/icon.png')}/>
+                <Image source={require('../../assets/images/icon.png')}/>
                 <Text style={styles.h2}> Expo Go </Text>
-                <Image source={require('../assets/images/react-logo.png')}/>
+                <Image source={require('../../assets/images/react-logo')}/>
             </View>
         </ScrollView>
     );
